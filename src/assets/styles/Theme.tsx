@@ -5,7 +5,19 @@ const Theme = () => {
     <Global
       styles={css`
         body {
-          background-color: #287e9e;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 200;
+          background-color: #1e5e76;
+          color: #fff;
+          user-select: none;
+        }
+        nav {
+          width: 100%;
+          height: 100px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
         }
       `}
     />
