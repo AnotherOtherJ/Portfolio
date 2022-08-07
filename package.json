@@ -32,7 +32,8 @@
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "prettier": "2.7.1",
     "typescript": "^4.7.4",
-    "vite": "^3.0.0"
+    "vite": "^3.0.0",
+    "vite-plugin-pwa": "^0.12.3"
   },
   "author": "Jakub Pawelec",
   "license": "GPLV3"
