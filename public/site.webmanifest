@@ -1,5 +1,7 @@
 {
-  "name": "Portfolio",
+  "name": "Jakub Pawelec - Portfolio",
+  "short_name": "Portfolio",
+  "description": "Just a portfolio",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
@@ -14,5 +16,6 @@
   ],
   "theme_color": "#287e9e",
   "background_color": "#287e9e",
-  "display": "standalone"
+  "display": "standalone",
+  "start_url": "/"
 }
