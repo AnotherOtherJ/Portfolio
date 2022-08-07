@@ -10,7 +10,6 @@ const Button = styled(motion.div)`
   transition: all 500ms cubic-bezier(0.73, 0.08, 0.67, 1.32);
   cursor: pointer;
   user-select: none;
-
   &::before {
     content: "";
     position: absolute;

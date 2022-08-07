@@ -19,12 +19,16 @@ const Theme = () => {
         }
         nav {
           width: 100%;
-          height: 100px;
+          min-height: 100px;
           display: flex;
           flex-direction: row;
           justify-content: space-evenly;
           align-items: center;
           flex-wrap: wrap;
+          padding: 3px;
+          @media (max-width: 1024px) {
+            gap: 10px;
+          }
         }
       `}
     />
