@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 
 const Button = styled(motion.div)`
   position: relative;
-  padding: 15px 30px;
+  padding: 15px 20px;
   font-size: 1.4rem;
   letter-spacing: 1.1rem;
   text-transform: uppercase;
-  transition: all 500ms cubic-bezier(0.73, 0.08, 0.67, 1.32);
+  transition: all 600ms cubic-bezier(0.73, 0.08, 0.67, 1.32);
   cursor: pointer;
   user-select: none;
   &::before {

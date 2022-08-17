@@ -17,7 +17,9 @@
     "jsx": "react-jsx",
     "importsNotUsedAsValues": "error",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@components/*": ["./src/components/*"],
+      "@pages/*": ["./src/pages/*"]
     }
   },
   "include": ["src"],
