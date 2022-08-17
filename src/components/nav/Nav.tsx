@@ -1,12 +1,8 @@
 import { Link } from "react-router-dom";
 
-import Button from "./Button";
+import Button from "./Button.style";
 
-type Props = {
-  setSelectedPage: (page: string) => void;
-};
-
-const Nav = ({ setSelectedPage }: Props) => {
+const Nav = () => {
   return (
     <nav>
       <Link to="/about">
