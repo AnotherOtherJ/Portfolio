@@ -3,6 +3,7 @@ import { m } from "framer-motion";
 
 type StyledPageProps = {
   direction?: string;
+  alignitems?: boolean;
 };
 
 type LinkProps = {
@@ -25,6 +26,7 @@ export const StyledPage = styled(m.div)`
   justify-content: center;
   @media (max-width: 768px) {
     width: 90%;
+    ${({ alignitems }: StyledPageProps) => (alignitems ? "align-items: center" : "")};
   }
 `;
 

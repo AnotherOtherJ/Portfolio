@@ -2,7 +2,7 @@ import { StyledPage, StyledSkills, variants } from "@components/styled/StyledPag
 
 const Skills = () => {
   return (
-    <StyledPage initial="initial" animate="animate" exit="exit" variants={variants}>
+    <StyledPage initial="initial" animate="animate" exit="exit" variants={variants} alignitems>
       <h1>Umiejętności</h1>
       <StyledSkills direction="row">
         <div>
