@@ -23,6 +23,9 @@ export const StyledPage = styled(m.div)`
   display: flex;
   flex-direction: ${({ direction }: StyledPageProps) => direction || "column"};
   justify-content: center;
+  @media (max-width: 768px) {
+    width: 90%;
+  }
 `;
 
 // Used only in AboutMe component
@@ -33,6 +36,7 @@ export const StyledDiv = styled(m.div)`
     border-radius: 10px;
     margin-left: auto;
     width: 100px;
+    aspect-ratio: 1;
   }
 `;
 
