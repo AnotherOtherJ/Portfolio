@@ -1,4 +1,4 @@
-import photo from "@assets/images/photo.jpg";
+import photo from "@assets/images/photo.webp";
 import { Link, Links, StyledDiv, StyledPage, variants } from "@components/styled/StyledPage";
 import { m } from "framer-motion";
 
