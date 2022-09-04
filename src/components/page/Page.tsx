@@ -9,20 +9,18 @@ const Skills = lazy(() => import(`@pages/Skills`));
 const Page = () => {
   const location = useLocation();
   return (
-    <>
-      <Suspense>
-        <LazyMotion features={domAnimation}>
-          <AnimatePresence mode="wait">
-            <Routes key={location.pathname} location={location}>
-              <Route path="/about" element={<AboutMe />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/skills" element={<Skills />} />
-              <Route path="*" element={<AboutMe />} />
-            </Routes>
-          </AnimatePresence>
-        </LazyMotion>
-      </Suspense>
-    </>
+    <Suspense>
+      <LazyMotion features={domAnimation}>
+        <AnimatePresence mode="wait">
+          <Routes key={location.pathname} location={location}>
+            <Route path="/about" element={<AboutMe />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="*" element={<AboutMe />} />
+          </Routes>
+        </AnimatePresence>
+      </LazyMotion>
+    </Suspense>
   );
 };
 
