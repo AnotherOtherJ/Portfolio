@@ -3,7 +3,7 @@ import { m } from "framer-motion";
 
 type StyledPageProps = {
   direction?: string;
-  alignitems?: boolean;
+  alignItems?: boolean;
 };
 
 type LinkProps = {
@@ -14,7 +14,7 @@ type LinkProps = {
 export const variants = {
   initial: { opacity: 0, x: -100 },
   animate: { opacity: 1, x: 0, transition: { staggerChildren: 0.3 } },
-  exit: { opacity: 0, x: 500, transition: { ease: "linear", duration: 1 } },
+  exit: { opacity: 0, x: 500, transition: { ease: "linear", duration: 0.2 } },
 };
 
 // StyledPage is used in every Page component. It is a wrapper for the whole page.
@@ -26,7 +26,7 @@ export const StyledPage = styled(m.div)`
   justify-content: center;
   @media (max-width: 768px) {
     width: 90%;
-    ${({ alignitems }: StyledPageProps) => (alignitems ? "align-items: center" : "")};
+    ${({ alignItems }: StyledPageProps) => (alignItems ? "align-items: center" : "")};
   }
 `;
 
