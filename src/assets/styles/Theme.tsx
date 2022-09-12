@@ -206,6 +206,9 @@ const Theme = () => {
               gap: 10px;
             }
           }
+          h2 {
+            margin-bottom: 20px;
+          }
         `}
       />
     </>
