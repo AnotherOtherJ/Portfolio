@@ -35,7 +35,7 @@
     "prettier": "2.7.1",
     "typescript": "^4.7.4",
     "vite": "^3.0.9",
-    "vite-plugin-pwa": "^0.12.3"
+    "vite-plugin-pwa": "^0.13.1"
   },
   "author": "Jakub Pawelec",
   "license": "GPLV3"
