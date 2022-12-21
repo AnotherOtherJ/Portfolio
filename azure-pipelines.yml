@@ -25,9 +25,9 @@ steps:
       pnpm prettier -c .
     displayName: "Prettier check"
 
-  - script: |
-      pnpm test:ci
-    displayName: "Testing files"
+  # - script: |
+  #     pnpm test:ci
+  #   displayName: "Testing files"
 
   - script: |
       pnpm build
