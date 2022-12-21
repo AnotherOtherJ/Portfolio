@@ -9,9 +9,10 @@ import { VitePWA } from "vite-plugin-pwa";
 export default defineConfig({
   resolve: {
     alias: {
-      "components": resolve(__dirname, "./src/components"),
-      "pages": resolve(__dirname, "./src/pages"),
-      "assets": resolve(__dirname, "./src/assets"),
+      app: resolve(__dirname, "./src/app"),
+      components: resolve(__dirname, "./src/components"),
+      pages: resolve(__dirname, "./src/pages"),
+      assets: resolve(__dirname, "./src/assets"),
     },
   },
   plugins: [
