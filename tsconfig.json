@@ -16,13 +16,9 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "importsNotUsedAsValues": "error",
-    "paths": {
-      "@/*": ["./src/*"],
-      "@components/*": ["./src/components/*"],
-      "@pages/*": ["./src/pages/*"],
-      "@assets/*": ["./src/assets/*"]
-    }
+    "baseUrl": ".src/"
   },
   "include": ["src"],
+  "exclude": ["node_modules"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
