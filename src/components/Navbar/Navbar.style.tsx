@@ -7,6 +7,7 @@ export const Nav = styled.nav`
   height: 70px;
   padding: 0 15px 0 15px;
   gap: 15px;
+  box-shadow: 1px 0 5px 1px ${({ theme: { colors } }) => colors.backgroundAcc};
 
   > :last-child {
     margin-left: auto;

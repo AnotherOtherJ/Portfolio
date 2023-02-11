@@ -1,11 +1,12 @@
 import App from "app";
 import Projects from "pages/Projects";
 import Skills from "pages/Skills";
-import { lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
+import loadable from "@loadable/component";
 
-const AboutMe = lazy(() => import("pages/AboutMe"));
-const Experience = lazy(() => import("pages/Experience"));
+const AboutMe = loadable(() => import("pages/AboutMe"));
+const Experience = loadable(() => import("pages/Experience"));
+const Error404 = loadable(() => import("pages/Error404"));
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,7 @@ const router = createBrowserRouter([
         path: "experience",
         element: <Experience />,
       },
+      { path: "*", element: <Error404 /> },
     ],
   },
 ]);

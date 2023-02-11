@@ -1,7 +1,0 @@
-// Vitest Snapshot v1
-
-exports[`render > should render 1`] = `
-{
-  "then": [Function],
-}
-`;

@@ -5,8 +5,7 @@ import { ThemeContext } from "./contexts";
 import { reducer } from "./reducers";
 
 const ThemeProvider = ({ children }: { children: JSX.Element }): JSX.Element => {
-  const helperFunction = (theme: Themes) => {
-    console.log("test");
+  const initTheme = (theme: Themes) => {
     const darkMode = window.localStorage.getItem("theme");
     const match = window.matchMedia("(prefers-color-scheme: dark)");
 
@@ -17,7 +16,7 @@ const ThemeProvider = ({ children }: { children: JSX.Element }): JSX.Element => 
     return match.matches ? { theme: theme.dark } : { theme: theme.light };
   };
 
-  const [state, dispatch] = useReducer(reducer, theme, helperFunction);
+  const [state, dispatch] = useReducer(reducer, theme, initTheme);
 
   useEffect(() => {
     const match = window.matchMedia("(prefers-color-scheme: dark)");
