@@ -1,7 +1,7 @@
 lockfileVersion: '6.0'
 
 settings:
-  autoInstallPeers: true
+  autoInstallPeers: false
   excludeLinksFromLockfile: false
 
 dependencies:
@@ -84,7 +84,7 @@ devDependencies:
     version: 3.0.9
   vite-plugin-pwa:
     specifier: ^0.12.3
-    version: 0.12.3(vite@3.0.9)(workbox-build@6.5.4)(workbox-window@6.5.4)
+    version: 0.12.3(vite@3.0.9)
 
 packages:
 
@@ -213,8 +213,8 @@ packages:
       '@babel/helper-plugin-utils': 7.18.9
       debug: 4.3.4
       lodash.debounce: 4.0.8
-      resolve: 1.22.1
-      semver: 6.3.0
+      resolve: 1.22.8
+      semver: 6.3.1
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1234,7 +1234,7 @@ packages:
       babel-plugin-polyfill-corejs3: 0.5.3(@babel/core@7.18.13)
       babel-plugin-polyfill-regenerator: 0.4.0(@babel/core@7.18.13)
       core-js-compat: 3.24.1
-      semver: 6.3.0
+      semver: 6.3.1
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1608,7 +1608,7 @@ packages:
       builtin-modules: 3.3.0
       deepmerge: 4.2.2
       is-module: 1.0.0
-      resolve: 1.22.1
+      resolve: 1.22.8
       rollup: 2.78.1
     dev: true
 
@@ -2030,7 +2030,7 @@ packages:
       '@babel/compat-data': 7.18.8
       '@babel/core': 7.18.13
       '@babel/helper-define-polyfill-provider': 0.3.2(@babel/core@7.18.13)
-      semver: 6.3.0
+      semver: 6.3.1
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -4676,12 +4676,10 @@ packages:
       - terser
     dev: false
 
-  /vite-plugin-pwa@0.12.3(vite@3.0.9)(workbox-build@6.5.4)(workbox-window@6.5.4):
+  /vite-plugin-pwa@0.12.3(vite@3.0.9):
     resolution: {integrity: sha512-gmYdIVXpmBuNjzbJFPZFzxWYrX4lHqwMAlOtjmXBbxApiHjx9QPXKQPJjSpeTeosLKvVbNcKSAAhfxMda0QVNQ==}
     peerDependencies:
       vite: ^2.0.0 || ^3.0.0-0
-      workbox-build: ^6.4.0
-      workbox-window: ^6.4.0
     dependencies:
       debug: 4.3.4
       fast-glob: 3.2.11
@@ -4691,6 +4689,7 @@ packages:
       workbox-build: 6.5.4
       workbox-window: 6.5.4
     transitivePeerDependencies:
+      - '@types/babel__core'
       - supports-color
     dev: true
 
