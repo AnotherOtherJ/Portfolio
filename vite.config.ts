@@ -1,29 +1,18 @@
-import react from "@vitejs/plugin-react";
-import { resolve } from "path";
-import { defineConfig } from "vite";
-import { VitePWA } from "vite-plugin-pwa";
+import { fileURLToPath, URL } from 'node:url'
 
-// https://vitejs.dev/config/
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+import vueDevTools from 'vite-plugin-vue-devtools'
+
+// https://vite.dev/config/
 export default defineConfig({
-  build: {
-    sourcemap: true,
-  },
+  plugins: [
+    vue(),
+    vueDevTools(),
+  ],
   resolve: {
     alias: {
-      "@": resolve(__dirname, "./src"),
-      "@components": resolve(__dirname, "./src/components"),
-      "@pages": resolve(__dirname, "./src/pages"),
-      "@assets": resolve(__dirname, "./src/assets"),
+      '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
-  plugins: [
-    react({
-      babel: {
-        plugins: ["@emotion/babel-plugin"],
-      },
-    }),
-    VitePWA({
-      registerType: "autoUpdate",
-    }),
-  ],
-});
+})
